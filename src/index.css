@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 216 20% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 216 20% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 216 20% 12%;
+
+    --primary: 224 71% 36%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 224 71% 50%;
+    --primary-dark: 224 76% 28%;
+
+    --secondary: 224 15% 95%;
+    --secondary-foreground: 216 20% 12%;
+
+    --muted: 224 15% 95%;
+    --muted-foreground: 216 12% 45%;
+
+    --accent: 224 71% 36%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 224 15% 90%;
+    --input: 224 15% 90%;
+    --ring: 224 71% 36%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 43 96% 56%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Traffic status colors */
+    --traffic-jam: 0 84% 60%;
+    --traffic-jam-foreground: 0 0% 100%;
+    --traffic-flowing: 142 76% 36%;
+    --traffic-flowing-foreground: 0 0% 100%;
+    --traffic-heavy: 25 95% 53%;
+    --traffic-heavy-foreground: 0 0% 100%;
+
+    /* TrafKin specific colors */
+    --blue-50: 224 100% 97%;
+    --blue-100: 224 100% 94%;
+    --blue-200: 224 88% 88%;
+    --blue-300: 224 76% 78%;
+    --blue-400: 224 71% 64%;
+    --blue-500: 224 71% 50%;
+    --blue-600: 224 71% 36%;
+    --blue-700: 224 76% 28%;
+    --blue-800: 224 71% 22%;
+    --blue-900: 224 65% 18%;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--blue-50)));
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.1);
+    --shadow-floating: 0 10px 40px -10px hsl(var(--primary) / 0.2);
+    
+    /* Typography */
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 216 20% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 216 20% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 216 20% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 224 71% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 224 71% 64%;
+    --primary-dark: 224 76% 36%;
+
+    --secondary: 216 15% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 216 15% 15%;
+    --muted-foreground: 216 12% 65%;
+
+    --accent: 224 71% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 216 15% 20%;
+    --input: 216 15% 20%;
+    --ring: 224 71% 50%;
+
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 43 96% 56%;
+    --warning-foreground: 0 0% 100%;
+    
+    /* Traffic status colors - dark mode */
+    --traffic-jam: 0 84% 60%;
+    --traffic-jam-foreground: 0 0% 100%;
+    --traffic-flowing: 142 76% 36%;
+    --traffic-flowing-foreground: 0 0% 100%;
+    --traffic-heavy: 25 95% 53%;
+    --traffic-heavy-foreground: 0 0% 100%;
+
+    /* TrafKin specific colors - dark mode */
+    --blue-50: 216 20% 15%;
+    --blue-100: 216 20% 18%;
+    --blue-200: 216 15% 22%;
+    --blue-300: 224 76% 28%;
+    --blue-400: 224 71% 36%;
+    --blue-500: 224 71% 50%;
+    --blue-600: 224 71% 64%;
+    --blue-700: 224 76% 78%;
+    --blue-800: 224 88% 88%;
+    --blue-900: 224 100% 94%;
+
+    /* Gradients - dark mode */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(var(--blue-50)));
+    
+    /* Shadows - dark mode */
+    --shadow-card: 0 4px 20px -2px hsl(var(--primary) / 0.2);
+    --shadow-floating: 0 10px 40px -10px hsl(var(--primary) / 0.3);
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom keyframes for animations */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
