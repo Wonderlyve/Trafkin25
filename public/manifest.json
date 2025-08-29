@@ -1,0 +1,49 @@
+{
+  "name": "TrafKin - Trafic Kinshasa",
+  "short_name": "TrafKin",
+  "description": "Surveillez le trafic routier de Kinshasa en temps réel avec des flux vidéo live",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#4F46E5",
+  "theme_color": "#4F46E5",
+  "orientation": "portrait",
+  "scope": "/",
+  "lang": "fr",
+  "categories": ["productivity", "travel", "navigation"],
+  "icons": [
+    {
+      "src": "/lovable-uploads/20e68835-6418-462e-a118-af79c074ce55.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/lovable-uploads/20e68835-6418-462e-a118-af79c074ce55.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/lovable-uploads/3ec6cdd5-d0c2-49ec-856a-c1763f5d81bb.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Carte du trafic",
+      "short_name": "Carte",
+      "description": "Voir la carte du trafic en temps réel",
+      "url": "/map",
+      "icons": [
+        {
+          "src": "/lovable-uploads/20e68835-6418-462e-a118-af79c074ce55.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ]
+}
